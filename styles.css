@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans"
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+#main{
+    height: 100vh;
+    width: 100%;
+    background: url('Logos/main_page_logo.jpg');
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: black; */
+    color: #fff;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 54vw;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo h2{
+    font-size: 28px;
+}
+
+.nav-list-components{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-size: 1.6rem;
+    position: relative;
+    gap: 25px;
+}
+
+.logo:hover h2{
+    scale: 0.95;
+    transition: 0.2s;
+}
+
+.nav-list-components li:hover{
+    opacity: 0.8;
+}
+
+.nav-list-components a:visited{
+    background-color: grey;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+#page1 h1{
+    font-size: 8rem;
+}
+#element{
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    /* color: rgb(15, 6, 8); */
+    padding: 10px;
+    background: transparent;
+    font-weight: 900;
+    transition: 2s;
+}
+
+.down-arrow{
+    position: relative;
+    bottom: -13%;
+    font-size: 24px;
+    border: 2px solid white;
+    border-radius: 80%;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.down-arrow:hover{
+    transform: scale(1.3);
+    transition: transform 0.2s;
+}
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    gap: 3vh;
+    background-size: cover;
+}
+
+#intro>img{
+    height: 17vh;
+    width: 8.5vw;
+    border-radius: 50%;
+}
+
+#myself{
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#course-name{
+    color: purple;
+    font-weight: 800;
+}
+
+.tl-dr{
+    background-color: #dedede81;
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+
+.tl-text{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item img{
+    height: 150px;
+}
+
+#passion{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.intrests{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25.33%;
+    text-align: center;
+    gap: 4vh
+}
+
+.symbol{
+    height: 28vh;
+    width: 15vw;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+.content .symbol :hover{
+    transform: rotate(360deg);
+}
+
+.content p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.content h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#experience{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.experience-intro{
+    text-align: center;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    margin-top: 4.2vh;
+}
+
+.experience-intro h1{
+    font-size: 6rem;
+    margin-bottom: 2vh;
+}
+
+.experience-intro h3{
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.technologies{
+    height: 57vh;
+    width: 50%;
+    margin-top: 6vh;
+    margin-left: 60px;
+}
+
+.technologies h2{
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.tech-logos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.tech-logos img{
+    height: 100px;
+    width: 100px;
+    filter: grayscale(90%);
+}
+
+.tech-logos img:hover{
+    filter: grayscale(0%);
+}
+
+.box-content{
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+}
+
+.internships{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh
+}
+
+.internships h2{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+.internships img{
+    height: 14vh;
+    width: 25vw;
+}
+
+.internships img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.resume-sxn{
+    height: 40vh;
+    padding: 7vh;
+    margin-top: 30px;
+    text-align: center;
+    background: url('Logos/cat_bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-sxn button{
+    height: 7vh;
+    width: 11vw;
+    margin-top: 3vh;
+    font-size: 1.7rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.resume-sxn button:hover{
+    transform: scaleX(1.1);
+    transition: 0.3s
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3vh;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    height: 40vh;
+    width: 100%;
+}
+
+.contact h1{
+    font-size: 2rem;
+}
+
+.contact h3{
+    font-size: 1.4rem;
+    word-spacing: 3px;
+}
+
+.contact img{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    transition: 0.8s;
+}
+
+.contact img:hover{
+    transform: translate(30%, -30%);
+    transition: .8s;
+}
+
+.contact button{
+    height: 7vh;
+    width: 11vw;
+    font-size: 1.7rem;
+    background: transparent;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+.contact button:hover{
+    background-color: blue;
+    transition: 0.33s;
+}
+
+#footer{
+    height: 30vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.7vh
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.8rem;
+    gap: 1.6vw
+}
+
+.social-media img:hover{
+    transform: scale(1.19);
+}
+
+#footer img{
+    height: 40px;
+    width: 40px;
+}
+
+.top{
+    transition: .3s;
+}
+
+.top:hover{
+    transform: translateY(-40%);
+    transition: .3s;
+}
+
+.copyright-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7vw
+}
+
+.work-container{
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    margin-bottom: 20vh;
+}
+
+.card-sxn{
+    display: flex;
+    gap: 5.5vw;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6.5vh;
+}
+
+.work-container h1{
+    font-size: 3.6rem;
+    margin-top: 100px;
+}
+
+.work-container h4{
+    font-size: 1.7rem;
+}
+
+.work-container h1,h4{
+    text-align: center;
+}
+
+.cards{
+    height: 30vh;
+    width: 25.33%;
+    display: flex;
+    background-color: orangered;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+#card1{
+    background: url("projects/Cynthia_Ugwu.png");
+    background-size: cover;
+}
+
+#card2{
+    background: url("projects/Sidcup_Golf.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#card3{
+    background: url("projects/nicolo_miranda.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#card4{
+    background: url("projects/Studybud.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#card5{
+    background: url("projects/DJCRM.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#card6{
+    background: url("projects/Dhoni_Tribute.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    border-radius: 10px;
+}
+
+.overlay i{
+    font-size: 30px;
+}
+
+.overlay-text{
+    background-color: #3498db;
+    width: 100.3%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -34.7%;
+    font-size: 1.4rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.cards:hover .overlay{
+    opacity: 1;
+    transition: 0.33s;
+    border: 1px solid black;
+}
+
+.modal_container{
+    background-color: #fff;
+    width: 50vw;
+    max-width: 90%;
+    position: relative;
+    transform: translateY(-100%);
+}
+
+.modal_container{
+    transform: translateY(0px)
+}
+
+.modal_wrapper_card{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    z-index: 999;
+}
+
+.modal_container button.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-title{
+    width: 100%;
+    background-color: rgb(191, 185, 185);
+    text-align: center;
+}
+
+.project-title h2{
+    padding-top: 1.5vh;
+}
+
+.project-title h5{
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 7px;
+    margin-bottom: 4px;
+}
+
+.project-image img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 500px;
+    background-size: cover;
+}
+
+.project-desc{
+    margin-left: 90px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.project-desc p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.3px;
+    letter-spacing: 1.5px;
+}
+
+.pr-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 2.6vh;
+    margin-bottom: 2.8vh;
+}
+
+.pr-btns button{
+    height: 40px;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid orangered;
+    color: orangered;
+}
+
+.pr-btns button:hover{
+    background: orangered;
+    color: whitesmoke;
+    transition: 0.3s;
+}
